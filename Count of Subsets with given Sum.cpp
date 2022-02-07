@@ -21,7 +21,7 @@ class Solution{
                 dp[i][j] = dp[i - 1][j]%1000000007;
             else
             {
-                dp[i][j] = dp[i - 1][j] + dp[i - 1][j - arr[i - 1]]%1000000007;
+                dp[i][j] = dp[i - 1][j]%1000000007 + dp[i - 1][j - arr[i - 1]]%1000000007;
             }
         }
     }
